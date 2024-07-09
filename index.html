@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es-co">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptar y Desencriptar</title>
+</head>
+<header class="header">
+    <a href="index.html">
+        <img src="imagenes/Logo.png" alt="Logo">
+    </a>
+</header>
+<body>
+    <main class="presentacion">
+        <section class="presentacion__contenido">
+            <div class="ingrese__texto">
+                <textarea id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
+            </div>
+            <div class="mensaje__texto">
+                <img class="imagen__vector" src="imagenes/bi_exclamation-circle-fill.png" alt="Advertencia"></img>
+                <a> Solo letras minúsculas y sin acentos</a>
+            </div>
+            <div class="botones">
+                <button class="contenidoencriptar" onclick="verificarTexto('encriptar')">Encriptar</button>
+                <button class="contenidodesencriptar" onclick="verificarTexto('desencriptar')">Desencriptar</button>
+            </div>
+        </section>
+        <section class="respuesta">
+            <textarea id="outputText" placeholder="Resultado aquí..."></textarea>
+            <button class="copiar__texto" onclick="copiarTexto()">Copiar</button>
+        </section>
+        <section class="retangulo" id="noMessageSection">
+            <img class="imagen__muñeco" src="imagenes/Muñeco.png" alt="Muñeco"></img>
+            <h1 class="msj1">Ningún mensaje fue encontrado</h1>
+            <p class="msj2">Ingresa el texto que deseas encriptar o desencriptar.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Jonathan Vallejo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
